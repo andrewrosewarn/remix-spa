@@ -1,6 +1,7 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 
 import "./tailwind.css";
+import HydrateLoader from "./HydrateLoader";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,5 +26,5 @@ export default function App() {
 }
 
 export function HydrateFallback() {
-  return <p>Loading...</p>;
+  return <HydrateLoader />;
 }
