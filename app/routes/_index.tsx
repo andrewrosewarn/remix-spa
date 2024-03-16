@@ -5,5 +5,9 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return <h1 className="text-lg m-4">Remix SPA</h1>;
+  return (
+    <>
+      <h1 className="text-lg m-4">Remix SPA</h1>
+    </>
+  );
 }
